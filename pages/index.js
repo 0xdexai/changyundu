@@ -116,6 +116,7 @@ export default function Home() {
           <a href="#about">About</a>
           <a href="#expertise">Expertise</a>
           <a href="#projects">Projects</a>
+          <a href="#gitlab-demo">GitLab</a>
           <a href="#capabilities">Capabilities</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -137,10 +138,10 @@ export default function Home() {
             </div>
             <div className="hero-actions">
               <a href="#projects" className="btn primary">View Projects</a>
-              <a href="mailto:Changyundu64@hotmail.com" className="btn ghost">Get in Touch</a>
+              <a href="mailto:xsope766@outlook.com" className="btn ghost">Get in Touch</a>
             </div>
             <div className="socials">
-              <a href="mailto:Changyundu64@hotmail.com">Email</a>
+              <a href="mailto:xsope766@outlook.com">Email</a>
               <a href="mailto:chang@barbarians.com">Work</a>
               <a href="https://gitlab.com/dongmount16" target="_blank" rel="noopener noreferrer">GitLab</a>
             </div>
@@ -161,7 +162,7 @@ export default function Home() {
               <p><strong>Name:</strong> Changyun du</p>
               <p><strong>Company:</strong> Barbarians, Inc</p>
               <p><strong>Role:</strong> Software Engineer</p>
-              <p><strong>Personal:</strong> <a href="mailto:Changyundu64@hotmail.com">Changyundu64@hotmail.com</a></p>
+              <p><strong>Personal:</strong> <a href="mailto:xsope766@outlook.com">xsope766@outlook.com</a></p>
               <p><strong>Work:</strong> <a href="mailto:chang@barbarians.com">chang@barbarians.com</a></p>
             </div>
           </div>
@@ -212,6 +213,30 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="gitlab-demo" className="section-wrap">
+          <div className="video-card">
+            <h2>GitLab</h2>
+            <p>
+              A short GitLab showcase video from my recent work. You can watch it directly here
+              or open my GitLab profile for more details.
+            </p>
+            <div className="video-frame">
+              <video controls preload="metadata">
+                <source src="/api/gitlab-video" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <a
+              href="https://gitlab.com/dongmount16"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn ghost"
+            >
+              Open GitLab Profile
+            </a>
+          </div>
+        </section>
+
         <section id="capabilities" className="section-wrap">
           <h2>Modern Web Capabilities</h2>
           <div className="cap-grid">
@@ -227,9 +252,9 @@ export default function Home() {
         <section id="contact" className="section-wrap">
           <div className="contact-panel">
             <h2>Let's Build Something Amazing</h2>
-            <p>Personal: <a href="mailto:Changyundu64@hotmail.com">Changyundu64@hotmail.com</a></p>
+            <p>Personal: <a href="mailto:xsope766@outlook.com">xsope766@outlook.com</a></p>
             <p>Work: <a href="mailto:chang@barbarians.com">chang@barbarians.com</a></p>
-            <a className="btn primary" href="mailto:Changyundu64@hotmail.com">Start a Project</a>
+            <a className="btn primary" href="mailto:xsope766@outlook.com">Start a Project</a>
           </div>
         </section>
 
@@ -555,6 +580,40 @@ export default function Home() {
           height: 100%;
           object-fit: cover;
           filter: saturate(1.05) contrast(1.02);
+        }
+
+        .video-card {
+          background: linear-gradient(150deg, rgba(15, 23, 42, 0.82), rgba(10, 19, 36, 0.78));
+          border: 1px solid rgba(71, 85, 105, 0.5);
+          border-radius: 14px;
+          padding: 24px;
+          display: grid;
+          gap: 14px;
+          backdrop-filter: blur(10px);
+          box-shadow: 0 16px 34px rgba(2, 6, 23, 0.3);
+        }
+
+        .video-card h2,
+        .video-card p {
+          margin: 0;
+        }
+
+        .video-card p {
+          color: #adbed3;
+          max-width: 70ch;
+        }
+
+        .video-frame {
+          overflow: hidden;
+          border-radius: 12px;
+          border: 1px solid rgba(71, 85, 105, 0.55);
+          background: #0b1220;
+        }
+
+        .video-frame video {
+          width: 100%;
+          display: block;
+          max-height: 520px;
         }
 
         .cap-grid {
