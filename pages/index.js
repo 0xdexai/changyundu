@@ -143,7 +143,6 @@ export default function Home() {
             <div className="socials">
               <a href="mailto:xsope766@outlook.com">Email</a>
               <a href="mailto:chang@barbarians.com">Work</a>
-              <a href="https://gitlab.com/dongmount16" target="_blank" rel="noopener noreferrer">GitLab</a>
             </div>
           </div>
           <div className="hero-photo-wrap">
@@ -226,14 +225,6 @@ export default function Home() {
                 Your browser does not support the video tag.
               </video>
             </div>
-            <a
-              href="https://gitlab.com/dongmount16"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn ghost"
-            >
-              Open GitLab Profile
-            </a>
           </div>
         </section>
 
